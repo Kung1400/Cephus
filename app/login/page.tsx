@@ -4,21 +4,21 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import axios from "axios";
-
+import "./loginpage.css"
 const LoginPage = () => {
   const router = useRouter();
 
   const [displayButton, setDisplayButton] = useState(false);
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState({ Email: "", Password: "" });
-  const isLoggedIn = false;
+  const isLoggedIn = true;
   const Login = async () => {
     try {
       setLoading(true);
       const response = await axios.post("/api/users/login", user);
       console.log("Login success", response.data);
       toast.success("Login successful");
-      router.push("/profile");
+      router.push("/homepage");
     } catch (error: any) {
       console.log("login failed ", error.message);
       toast.error(error.message);

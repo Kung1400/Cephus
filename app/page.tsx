@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import "./homepage.css"
 const HomePage = () => {
   return (
     <section className="w-full">
