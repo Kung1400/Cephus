@@ -39,12 +39,6 @@ body {
   padding-top: 0.75rem;
 }
 
-
-nav a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .black_btn {
   background-color: black;
   color: white;
@@ -55,11 +49,7 @@ nav a {
 }
 
 
-.content-container {
-  padding: 2rem;
-  max-width: 700px;
-  margin: 0 auto;
-}
+
 
 .head_text {
   line-height: 1.2;
