@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import "./homepage.css"
 const Home = () => {
   const isuserloggedin = true;
 
